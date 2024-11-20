@@ -1,0 +1,194 @@
+.card-container {
+    font-family: 'Gill Sans';
+    display: flex;
+    flex-wrap: wrap;
+    /* next line on small screens */
+    gap: 20px;
+    /* Space between cards */
+    justify-content: space-around;
+    /* Space evenly around cards */
+}
+
+.card-container .card {
+    background-color: rgb(164, 207, 250);
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+/* Content Layout */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-content p {
+    color: #007bff;
+}
+
+.card-content p:hover {
+    color: antiquewhite;
+}
+
+.card-content hr {
+    color: rgb(255, 255, 255);
+}
+
+.card-content .row #side img {
+    margin-top: 15%;
+    padding: 7px;
+}
+
+.card-content .row #side img:hover {
+    transform: scale(1.03);
+}
+
+/* Title */
+.card-title {
+    font-size: 20px;
+    margin-top: 3%;
+    color: #007bff;
+}
+
+/* Description */
+.card-description {
+    font-size: 15px;
+    margin: 0 0 20px;
+    color: #007bff;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons .btn {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.buttons .btn:hover {
+    background-color: #007bff;
+    color: antiquewhite;
+}
+
+.bars {
+    float: right;
+}
+
+/* Image */
+.img {
+    height: 13vh;
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    padding: none;
+}
+
+.img:hover {
+    border: 3px solid antiquewhite;
+}
+
+.city {
+    font-size: 15px;
+    color: #007bff;
+}
+
+/* Skills */
+.skills {
+    text-align: left;
+    color: #007bff;
+}
+
+.skills p {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 7px 7px 0;
+    font-size: 12px;
+}
+
+.skills ul li:hover {
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer {
+    color: #007bff;
+    margin: auto;
+}
+
+.footer div {
+    display: inline-block;
+    padding: 7px;
+    margin-left: 4%;
+}
+
+a {
+    margin: 0 10px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: antiquewhite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .img {
+        height: 25vh;
+        width: 35%;
+    }
+}
+
+@media (max-width:600px) {
+    .img {
+        height: 20vh;
+        width: 40%;
+    }
+}
+
+@media (max-width:425px) {
+    .img {
+        height: 20vh;
+        width: 60%;
+    }
+
+}
+
+@media (max-width:375px) {
+    .img {
+        height: 20vh;
+        width: 70%;
+    }
+
+}
